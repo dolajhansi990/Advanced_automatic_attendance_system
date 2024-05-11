@@ -1,0 +1,9 @@
+Attendance of Students Captured by Automatic Attendance System
+
+The System sends automatic attendance of students section-wise.
+
+The System sends a attachment file below. Check it once.
+
+Thanking You,
+By VISPR Technologies.
+

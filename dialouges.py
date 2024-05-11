@@ -1,0 +1,19 @@
+blink_Eye_Voice_Data = ["Please blink your eyes to comfirm your identity", "Can you please blink your eyes to comfirm your identity", "could you please blink your eyes to comfirm your identity", "You should blink your eyes to comfirm your identity", "ok dear, You must blink your eyes to comfirm your identity", "to comfirm your identity, please blink your eyes"]
+try_again_Voice_Data = ["try again","please try again", "try once more", "try it again"]
+unauthorized_face_Voice_Data = ["unauthorized face found. access denied", "your face does not match with the database signature, access denied", "your face is not found in the database, access denied", "access denied. access denied, unauthorized face found"]
+unauthorized_IDcard_Voice_Data = ["unauthorized identity card found. access denied. access denied.", "access denied. access denied. unauthorized identity card found.", "your identity card is invalid. access denied", "invalid identity card access denied", "i can't accept your identity card. because it is invalid","Your identity card is incorrect, access denied"]
+
+Entering_Voice_Data = ["you look smart today","it's nice to see you","Wow, you are awesome today", "you are so beautiful today", "you are wearing a nice dress", "I love you, because, you are so attractive","you look smart today, and please focus on your work","please work hard","please focus on your work","I love you very much, because you are a hard worker"]
+Exiting_Voice_Data = ["you look so tired"," ","you did a good job today","you made it today","today, you performed well","i think you feel sad","i think you feel tired","i think you feel good","how about your work today?","how was today","i think, today you were happy at your work","i think, you enjoyed your work today","i think, you felt sad on your work","you did a nice job today","i think, you are angry on your work today"]
+
+Entering_Attendance_Passed = ["ok done, your attendance has been marked, You are welcome and have a nice day", "your attendance has been marked, You are welcome and have a nice day","your attendance has been recorded successfully. have a nice day", "you are welcome, your attendance has been marked","you are warmly welcome and your attendance has been marked successfully","your attendance has been marked successfully. have a wonderful day", "your attendance has been marked. Please focus on your work","your attendance has been noted, i hope, you would perform well on your study today","thank you, your attendance has been marked","you are welcome, your attendance has been recorded","your attendance has been noted and you are warmly welcome","your attendance has been marked successfully, and please concentrate on your work"]
+
+
+Restarting_Voice = ["The system is restarting", "I am restarting myself", "I am rebooting","the system is rebooting", "i am deactivating myself","the face recognition process has been canceled"]
+
+Entering_Attendance_Passed_Pending = ["Your attendance marked as pending. Your request will be reviewed by the admin. Anyway, You are welcome and have a nice day", "Your attendance in pending. the admin will review it soon, you're welcome and have a wonderful day", "your attendance noted as pending, admin will review it soon. you are warmly welcome and have a nice day", "your attendance request has been sent to the admin for review. you are welcome and have a great day", "your attendance request has been recorded. it will be review by the admin soon. and have a nice day"]
+
+shutting_Down_Voices = ["The system is shutting down", "Bye, I am shutting down myself","The system is deactivating", "Bye, I am deactivating myself", "The system is turning off", "Bye, I am turning off myself"]
+
+
+Attendance_Already_Exit = ["your attendance has been already marked","your attendance has been already exited in the database", "your attendance is already in the database"]

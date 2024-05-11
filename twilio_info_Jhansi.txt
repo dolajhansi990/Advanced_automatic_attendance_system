@@ -1,0 +1,23 @@
+_56pUaR0ohYL1oG2HIl0d2IlGNVMhGlqZ4yJBLZg
+
+
+Account SID: AC85a7b3c089982132e92f5aa3f0952661
+
+Auth Token: 572c631a720a1a33a066df60b9de5652
+
++12345163360
+
+
+from twilio.rest import Client
+
+account_sid = 'AC85a7b3c089982132e92f5aa3f0952661'
+auth_token = '[AuthToken]'
+client = Client(account_sid, auth_token)
+
+message = client.messages.create(
+  from_='+12345163360',
+  body='Hello Testing code',
+  to='+919391139907'
+)
+
+print(message.sid)

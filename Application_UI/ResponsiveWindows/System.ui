@@ -1,0 +1,3707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2598</width>
+    <height>1606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Advance Automatic Attendance System</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Images/applogo.png</normaloff>../../Images/applogo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">QWidget#HomePage{
+	image: url(:/pics/select_profile.png);
+background-color: rgb(214, 228, 229);
+}
+
+QWidget#Student_profile{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 181, 255, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+QWidget#modifyStudent{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(158, 198, 241, 255), stop:1 rgba(0, 255, 255, 255));
+}
+
+QWidget#DataSet{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(12, 64, 172, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+}
+QWidget#TrainData{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(63, 142, 255, 255), stop:1 rgba(255, 255, 255, 255));
+}
+
+QWidget#ViewRecords{
+background-color: rgb(73, 113, 116);
+}
+
+QWidget#Developers{
+	background-color: rgb(6, 40, 61);
+
+}
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>6</number>
+      </property>
+      <widget class="QWidget" name="HomePage">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="Title">
+            <property name="styleSheet">
+             <string notr="true">font: 75 38pt &quot;Times New Roman&quot;;
+color: rgb(44, 54, 57);
+</string>
+            </property>
+            <property name="text">
+             <string>Advance Automatic Attendance System</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="logo">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../../Images/wallpaper.jpeg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="0">
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="attnstart">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border-radius: 10px;
+background-color: rgb(63, 78, 79);
+color: rgb(220, 215, 201);
+font: 75 11pt &quot;Times New Roman&quot;;
+font: 75 20pt &quot;Times New Roman&quot;;
+}
+
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>Take Attendance</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Student_profile">
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_19">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>2612</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Register ID:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="2" colspan="2">
+               <widget class="QLineEdit" name="lineID">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="3">
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Student Name:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="2" colspan="2">
+               <widget class="QLineEdit" name="stdname">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="2">
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_4">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Date Of Birth:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="2" colspan="2">
+               <widget class="QDateEdit" name="inputDOB">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QDateEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+}
+
+QDateEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="1">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="1">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="title">
+               <string>Gender</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <item row="0" column="0">
+                  <widget class="QRadioButton" name="male">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Times New Roman&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Male</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <spacer name="horizontalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QRadioButton" name="female">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Times New Roman&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Female</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="2">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Email Id:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLineEdit" name="inputEmail">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="2">
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Mobile No:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="inputMobile">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <spacer name="verticalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="2">
+             <spacer name="verticalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Parent Mobile No:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <spacer name="horizontalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="inputParent">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="2">
+             <spacer name="verticalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Branch:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <spacer name="horizontalSpacer_15">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="2">
+             <widget class="QLineEdit" name="inputBranch">
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="3">
+           <spacer name="horizontalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="4">
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="1" column="1">
+             <widget class="QPushButton" name="clearBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>81</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border-radius:10px;
+background-color: rgb(64, 66, 88);
+color: rgb(222, 245, 229);
+font: 75 14pt &quot;Times New Roman&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="InsertBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>81</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border-radius:10px;
+background-color: rgb(64, 66, 88);
+color: rgb(222, 245, 229);
+font: 75 14pt &quot;Times New Roman&quot;;
+
+}
+
+QPushButton:Focus{
+border: 2px solid #ffff;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>Submit</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QPushButton" name="stdpic">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>210</width>
+                <height>210</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../Images/select_profile.png</normaloff>../../Images/select_profile.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>201</width>
+                <height>221</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_17">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <spacer name="horizontalSpacer_18">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>2612</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0">
+         <widget class="QTableWidget" name="studentTable">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(239, 245, 245);
+border-color: rgb(0, 0, 0);</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>S.No.</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Student ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Student Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Date of Birth</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Gender</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Email ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Section</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mobile Number</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Parent Mobile Number</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="modifyStudent">
+       <layout class="QGridLayout" name="gridLayout_23">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_25">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>2559</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_16">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_17">
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_18">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Register ID:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer_26">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="2" colspan="2">
+               <widget class="QLineEdit" name="lineID_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <spacer name="verticalSpacer_18">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="3">
+               <spacer name="verticalSpacer_19">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Student Name:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <spacer name="horizontalSpacer_27">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="2" colspan="2">
+               <widget class="QLineEdit" name="stdname_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <spacer name="verticalSpacer_20">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="2">
+               <spacer name="verticalSpacer_21">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_11">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Date Of Birth:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <spacer name="horizontalSpacer_28">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="2" colspan="2">
+               <widget class="QDateEdit" name="inputDOB_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QDateEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+}
+
+QDateEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="1">
+             <spacer name="verticalSpacer_22">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="1">
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="title">
+               <string>Gender</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_19">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_20">
+                 <item row="0" column="0">
+                  <widget class="QRadioButton" name="male_2">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Times New Roman&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Male</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <spacer name="horizontalSpacer_29">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QRadioButton" name="female_2">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Times New Roman&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Female</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="horizontalSpacer_30">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer_31">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="2">
+           <layout class="QGridLayout" name="gridLayout_21">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Email Id:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <spacer name="horizontalSpacer_32">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLineEdit" name="inputEmail_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer_36">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="2">
+             <spacer name="verticalSpacer_37">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Mobile No:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_33">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="inputMobile_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <spacer name="verticalSpacer_38">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="2">
+             <spacer name="verticalSpacer_39">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_42">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Parent Mobile No:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <spacer name="horizontalSpacer_34">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="inputParent_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_40">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="2">
+             <spacer name="verticalSpacer_41">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_43">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Branch:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <spacer name="horizontalSpacer_35">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="2">
+             <widget class="QLineEdit" name="inputBranch_2">
+              <property name="minimumSize">
+               <size>
+                <width>191</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="3">
+           <spacer name="horizontalSpacer_36">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="4">
+           <layout class="QGridLayout" name="gridLayout_22">
+            <item row="1" column="1">
+             <widget class="QPushButton" name="clearBtn_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>81</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border-radius:10px;
+background-color: rgb(64, 66, 88);
+color: rgb(222, 245, 229);
+font: 75 14pt &quot;Times New Roman&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="InsertBtn_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>81</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border-radius:10px;
+background-color: rgb(64, 66, 88);
+color: rgb(222, 245, 229);
+font: 75 14pt &quot;Times New Roman&quot;;
+
+}
+
+QPushButton:Focus{
+border: 2px solid #ffff;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>Submit</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QPushButton" name="stdpic_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>210</width>
+                <height>201</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../Images/select_profile.png</normaloff>../../Images/select_profile.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>201</width>
+                <height>221</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_37">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <spacer name="horizontalSpacer_24">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>2559</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0">
+         <widget class="QTableWidget" name="studentTable_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(239, 245, 245);
+border-color: rgb(0, 0, 0);</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>S.No.</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Student ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Student Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Date of Birth</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Gender</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Email ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Section</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mobile Number</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Parent Mobile Number</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="DataSet">
+       <layout class="QGridLayout" name="gridLayout_26">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_24">
+          <item row="2" column="2">
+           <layout class="QGridLayout" name="gridLayout_25">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_16">
+              <property name="styleSheet">
+               <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Student ID:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_39">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer_23">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="4">
+             <spacer name="verticalSpacer_24">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QLabel" name="label_17">
+              <property name="styleSheet">
+               <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Number of Images:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <spacer name="horizontalSpacer_40">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="3" colspan="3">
+             <widget class="QLineEdit" name="images">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>180</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <spacer name="horizontalSpacer_41">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="1">
+             <spacer name="verticalSpacer_25">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="2" colspan="2">
+             <widget class="QPushButton" name="captureBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>41</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#captureBtn{
+border-radius:10px;
+background-color: rgb(64, 66, 88);
+color: rgb(222, 245, 229);
+font: 75 12pt &quot;Times New Roman&quot;;
+
+}
+
+QPushButton#captureBtn:Focus{
+border: 2px solid white;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>Start Capturing</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="4">
+             <spacer name="verticalSpacer_26">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="5">
+             <spacer name="horizontalSpacer_42">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="4" colspan="2">
+             <widget class="QLineEdit" name="StdID">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>180</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;
+border: 1px solid #737373;
+}
+
+QLineEdit:Focus{
+border: 2px solid #00006d;
+	
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="3">
+           <spacer name="verticalSpacer_27">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="2">
+           <spacer name="horizontalSpacer_43">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="0" colspan="5">
+           <widget class="QTableWidget" name="DataSetTable">
+            <column>
+             <property name="text">
+              <string>S.NO.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Student ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Full Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Number of Images</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Created Date</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <spacer name="horizontalSpacer_44">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_45">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="0">
+           <spacer name="horizontalSpacer_46">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="1">
+           <spacer name="verticalSpacer_28">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="2">
+           <spacer name="horizontalSpacer_47">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="TrainData">
+       <layout class="QGridLayout" name="gridLayout_31">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_27">
+          <item row="2" column="1">
+           <widget class="QTableWidget" name="TrainDataTable">
+            <column>
+             <property name="text">
+              <string>S.NO.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Student ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Full Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>No of Trained Images</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Trained  Date</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_28">
+            <item row="0" column="7">
+             <widget class="QPushButton" name="qrcode">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>251</width>
+                <height>291</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <spacer name="verticalSpacer_29">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="3">
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_29">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_30">
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_18">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Student ID:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0" colspan="4">
+                  <spacer name="horizontalSpacer_48">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="6" column="0" colspan="4">
+                  <widget class="QProgressBar" name="trainingBar">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>491</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="4">
+                  <spacer name="horizontalSpacer_49">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="8" column="0" colspan="4">
+                  <spacer name="horizontalSpacer_50">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="5" column="0" colspan="4">
+                  <spacer name="horizontalSpacer_51">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="1">
+                  <spacer name="horizontalSpacer_52">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="9" column="0">
+                  <spacer name="horizontalSpacer_53">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLineEdit" name="stdID">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>211</width>
+                     <height>41</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+font: 75 12pt &quot;Times New Roman&quot;;
+border-radius:5px;
+}
+
+QLineEdit:focus{
+border: 2px solid #EB6440;
+
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="2">
+                  <widget class="QPushButton" name="trainBtn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>121</width>
+                     <height>31</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+font: 75 12pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(6, 40, 61);
+border-radius:10px;
+}
+QPushButton:focus{
+border:2px solid #EFF5F5;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string> Start Training</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="9">
+             <spacer name="verticalSpacer_30">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <spacer name="verticalSpacer_31">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="2">
+             <spacer name="verticalSpacer_32">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0">
+             <spacer name="verticalSpacer_33">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="8">
+             <spacer name="verticalSpacer_34">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <spacer name="horizontalSpacer_54">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <spacer name="verticalSpacer_35">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ViewRecords">
+       <layout class="QGridLayout" name="gridLayout_35">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_34">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_33">
+            <item row="0" column="0" colspan="5">
+             <layout class="QGridLayout" name="gridLayout_32">
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_45">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(214, 228, 229);
+font: 75 32pt &quot;Times New Roman&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Attendance Register</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_55">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_38">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLabel" name="label_46">
+              <property name="styleSheet">
+               <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;
+text-decoration: underline;
+font: 75 20pt &quot;Times New Roman&quot;;
+color: rgb(240, 240, 240);
+font: 75 18pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Time :</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QLabel" name="settime">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(214, 228, 229);
+font: 16pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>23:22 PM</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_44">
+              <property name="styleSheet">
+               <string notr="true">font: 75 18pt &quot;Times New Roman&quot;;
+text-decoration: underline;
+color: rgb(239, 245, 245);</string>
+              </property>
+              <property name="text">
+               <string>Date:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="setdate">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(239, 245, 245);
+font: 14pt &quot;Times New Roman&quot;;</string>
+              </property>
+              <property name="text">
+               <string>15-Dec-2002</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <spacer name="horizontalSpacer_56">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTableWidget" name="RegisterTable">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(214, 228, 229);</string>
+            </property>
+            <column>
+             <property name="text">
+              <string>S.No.</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Student ID</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Student Name</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Section</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Time</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Date</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Developers">
+       <layout class="QGridLayout" name="gridLayout_15">
+        <item row="1" column="1">
+         <layout class="QGridLayout" name="gridLayout_14">
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_21">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer_20">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="2">
+           <spacer name="horizontalSpacer_22">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>431</width>
+              <height>171</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_6{
+
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.534, x2:0.001, y2:0.522409, stop:0 rgba(219, 163, 154, 255), stop:1 rgba(245, 235, 224, 255));
+border-radius:20%;
+}
+</string>
+            </property>
+            <widget class="QLabel" name="label_33">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>20</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 18pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>P Sindhu Ruth</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_34">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>50</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 14pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Asst. Professor</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_35">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>100</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 75 20pt &quot;Arial&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Mentor</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_41">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>20</y>
+               <width>121</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel#label_34{
+border-radius:60%;
+border: 3px solid rgb(6, 40, 61);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../Images/SindhuMam.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <spacer name="horizontalSpacer_23">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="0">
+           <spacer name="verticalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QWidget" name="widget" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>241</width>
+              <height>371</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget{
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:1, x2:0.512, y2:0, stop:0 rgba(219, 163, 154, 255), stop:1 rgba(245, 235, 224, 255));
+border-radius:20%;
+}
+</string>
+            </property>
+            <widget class="QLabel" name="label_22">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>220</y>
+               <width>241</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 18pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Priyanka Inagadapu</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_23">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>250</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 14pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>O180307</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_24">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>300</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 75 20pt &quot;Arial&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Coder</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_40">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>40</y>
+               <width>121</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel#label_40{
+border-radius:60%;
+border: 3px solid rgb(6, 40, 61);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../Images/PriyankaI.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="verticalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="3">
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>241</width>
+              <height>371</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_2{
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:1, x2:0.512, y2:0, stop:0 rgba(219, 163, 154, 255), stop:1 rgba(245, 235, 224, 255));
+border-radius:20%;
+}
+</string>
+            </property>
+            <widget class="QLabel" name="label_19">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>220</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 18pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Sai Susmitha K</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_20">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>250</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 14pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>O180335</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_21">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>300</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 75 20pt &quot;Arial&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Documentarian</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_37">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>40</y>
+               <width>121</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel#label_37{
+border-radius:60%;
+border: 3px solid rgb(6, 40, 61);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../Images/SaiSusmitha.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <spacer name="verticalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="5">
+           <widget class="QWidget" name="widget_3" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>241</width>
+              <height>371</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_3{
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:1, x2:0.512, y2:0, stop:0 rgba(219, 163, 154, 255), stop:1 rgba(245, 235, 224, 255));
+border-radius:20%;
+}
+</string>
+            </property>
+            <widget class="QLabel" name="label_15">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>221</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 18pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Venkatesh Yarram</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_25">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>250</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 14pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>O180428</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_26">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>300</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 75 20pt &quot;Arial&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Team Leader</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_36">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>40</y>
+               <width>121</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel#label_36{
+border-radius:60%;
+border: 3px solid rgb(6, 40, 61);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../Images/Venkatesh.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <spacer name="verticalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="7">
+           <widget class="QWidget" name="widget_4" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>241</width>
+              <height>371</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_4{
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:1, x2:0.512, y2:0, stop:0 rgba(219, 163, 154, 255), stop:1 rgba(245, 235, 224, 255));
+border-radius:20%;
+}
+</string>
+            </property>
+            <widget class="QLabel" name="label_27">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>250</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 14pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>O180583</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_28">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>221</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 18pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Rahul Melam</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_29">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>300</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 75 20pt &quot;Arial&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Documentarian</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_38">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>40</y>
+               <width>121</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel#label_38{
+border-radius:60%;
+border: 3px solid rgb(6, 40, 61);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../Images/Rahul.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="8">
+           <spacer name="verticalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="9">
+           <widget class="QWidget" name="widget_5" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>241</width>
+              <height>371</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_5{
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:1, x2:0.512, y2:0, stop:0 rgba(219, 163, 154, 255), stop:1 rgba(245, 235, 224, 255));
+border-radius:20%;
+}
+</string>
+            </property>
+            <widget class="QLabel" name="label_30">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>250</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 14pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>O180132</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_31">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>221</y>
+               <width>241</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 18pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Praneeth Falukanama</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_32">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>300</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(6, 40, 61);
+font: 75 20pt &quot;Arial&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Coder</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_39">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>40</y>
+               <width>121</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel#label_39{
+border-radius:60%;
+border: 3px solid rgb(6, 40, 61);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../Images/loginlogo.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="10">
+           <spacer name="verticalSpacer_17">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_13">
+          <property name="styleSheet">
+           <string notr="true">QLabel#label_13{
+
+color: rgb(6, 40, 61);
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:1, x2:0.512, y2:0, stop:0 rgba(219, 163, 154, 255), stop:1 rgba(245, 235, 224, 255));
+font: 75 36pt &quot;Times New Roman&quot;;
+
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Developers</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2598</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+    <addaction name="actionHome"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuManage">
+    <property name="title">
+     <string>Manage</string>
+    </property>
+    <widget class="QMenu" name="menuManage_Student">
+     <property name="title">
+      <string>Manage Student</string>
+     </property>
+     <addaction name="actionNew_Student"/>
+     <addaction name="actionModify_Student"/>
+    </widget>
+    <addaction name="menuManage_Student"/>
+    <addaction name="actionData_Set"/>
+    <addaction name="actionTrain_Data"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionView_Records"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionDevelopers"/>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuManage"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionDevelopers">
+   <property name="text">
+    <string>Developers</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionNew_Student">
+   <property name="text">
+    <string>New Student</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionModify_Student">
+   <property name="text">
+    <string>Modify Student</string>
+   </property>
+  </action>
+  <action name="actionData_Set">
+   <property name="text">
+    <string>Data Set</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionTrain_Data">
+   <property name="text">
+    <string>Train Data</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionView_Records">
+   <property name="text">
+    <string>View Records</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>attnstart</tabstop>
+  <tabstop>lineID</tabstop>
+  <tabstop>stdname</tabstop>
+  <tabstop>inputDOB</tabstop>
+  <tabstop>male</tabstop>
+  <tabstop>female</tabstop>
+  <tabstop>inputEmail</tabstop>
+  <tabstop>inputMobile</tabstop>
+  <tabstop>inputParent</tabstop>
+  <tabstop>inputBranch</tabstop>
+  <tabstop>stdpic</tabstop>
+  <tabstop>InsertBtn</tabstop>
+  <tabstop>clearBtn</tabstop>
+  <tabstop>studentTable</tabstop>
+  <tabstop>stdname_2</tabstop>
+  <tabstop>inputDOB_2</tabstop>
+  <tabstop>male_2</tabstop>
+  <tabstop>female_2</tabstop>
+  <tabstop>inputEmail_2</tabstop>
+  <tabstop>inputMobile_2</tabstop>
+  <tabstop>inputParent_2</tabstop>
+  <tabstop>inputBranch_2</tabstop>
+  <tabstop>stdpic_2</tabstop>
+  <tabstop>clearBtn_2</tabstop>
+  <tabstop>InsertBtn_2</tabstop>
+  <tabstop>studentTable_2</tabstop>
+  <tabstop>lineID_2</tabstop>
+  <tabstop>StdID</tabstop>
+  <tabstop>images</tabstop>
+  <tabstop>captureBtn</tabstop>
+  <tabstop>DataSetTable</tabstop>
+  <tabstop>stdID</tabstop>
+  <tabstop>trainBtn</tabstop>
+  <tabstop>qrcode</tabstop>
+  <tabstop>TrainDataTable</tabstop>
+  <tabstop>RegisterTable</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Images/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

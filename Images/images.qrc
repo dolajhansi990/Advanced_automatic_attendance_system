@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="pics">
+    <file>PriyankaI.png</file>
+    <file>SaiSusmitha.png</file>
+    <file>applogo.png</file>
+    <file>Rahul.png</file>
+    <file>select_profile.png</file>
+    <file>SindhuMam.png</file>
+    <file>user.png</file>
+    <file>Venkatesh.png</file>
+    <file>wallpaper.jpeg</file>
+    <file>loginlogo.png</file>
+    <file>wallpaper.jpeg</file>
+    <file>select_profile.png</file>
+  </qresource>
+</RCC>

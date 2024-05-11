@@ -18,7 +18,7 @@ from reports import getReports, send_mail, send_msg
 try:
     Cont = connect(host="localhost", user="root", password="", database="management_auto_attendance_system")
 except mc.Error as error:
-    print(f"Error occured is {error}")
+    print(f"Error is {error}")
 MyCur = Cont.cursor()
 
 

@@ -47,15 +47,15 @@ def getReports():
 
 
 def send_mail():
-    sender_address = "o180428@rguktong.ac.in"
-    password = "tmxddfmbsuaoacai"
+    sender_address = "abc@gmail.com"
+    password = "password"
     current_date = date.today().strftime("%d-%b-%Y")
-    section = "CSE-3"
+    section = "CSE"
 
     msg = EmailMessage()
     msg['Subject'] = f"Attendance of {section} Students"
-    msg['From'] = "VISPR Technologies"
-    msg['To'] = "dolajhansi007@gmail.com"
+    msg['From'] = "Automatic Attendance System"
+    msg['To'] = "abc@gmail.com"
 
     with open("MailBodyConten.txt") as mybody:
         data = mybody.read()
